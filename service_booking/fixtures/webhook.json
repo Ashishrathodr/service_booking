@@ -1,14 +1,14 @@
 [
  {
   "background_jobs_queue": "",
-  "condition": "doc.status==\"Approved\"",
+  "condition": "",
   "docstatus": 0,
   "doctype": "Webhook",
   "enable_security": 0,
   "enabled": 1,
   "is_dynamic_url": 0,
-  "meets_condition": "Select a document to check if it meets conditions.",
-  "modified": "2025-07-31 20:24:35.867694",
+  "meets_condition": "Yes",
+  "modified": "2025-07-31 22:21:34.882748",
   "name": "Service Booking",
   "preview_document": null,
   "preview_request_body": "Select a document to preview request data",

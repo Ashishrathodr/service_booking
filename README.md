@@ -26,19 +26,22 @@ $ bench --site sitename migrate
 
 ```
 🖥 System Info
-	•	OS: Ubuntu 22.04
-	•	Python: 3.10
-	•	Frappe: 15.69.2
-    •	ERPNext: 15.63.0
-	•	Tools: VS Code
+```
+•	OS: Ubuntu 22.04
+•	Python: 3.10
+•	Frappe: 15.69.2
+•	ERPNext: 15.63.0
+•	Tools: VS Code
+```
 
 📘 Features
-	•	Doctype: Service Booking
-	•	Server Script: Sends confirmation email on approval
-	•	Print Format: Jinja-based confirmation receipt
-	•	Report: Filtered view of service booking
-	•	Webhook integration
-
+```
+•	Doctype: Service Booking
+•	Server Script: Sends confirmation email on approval
+•	Print Format: Jinja-based confirmation receipt
+•	Report: Filtered view of service booking
+•	Webhook integration
+```
 
 ### License
 

@@ -9,6 +9,9 @@ fixtures=[
 	{"dt":"Server Script", "filters": [["name","=","Service Booking Mail"]]},
  	{"dt":"Webhook", "filters": [["name","=","Service Booking"]]}, 
     {"dt":"Email Template", "filters": [["name","=","Booking Approved Template"]]}, 
+    {"dt":"Workflow", "filters": [["name","=","Service Booking"]]}, 
+    {"dt":"Workflow State", "filters": [["name","in",("Completed","Requested")]]}, 
+    {"dt":"Workflow Action Master", "filters": [["name","in",("Completed","Requested")]]}, 
 ]
 
 # Apps
