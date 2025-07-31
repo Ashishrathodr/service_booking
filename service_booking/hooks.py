@@ -5,6 +5,12 @@ app_description = "Service Booking"
 app_email = "ashishrathodr@gmail.com"
 app_license = "mit"
 
+fixtures=[
+	{"dt":"Server Script", "filters": [["name","=","Service Booking Mail"]]},
+ 	{"dt":"Webhook", "filters": [["name","=","Service Booking"]]}, 
+    {"dt":"Email Template", "filters": [["name","=","Booking Approved Template"]]}, 
+]
+
 # Apps
 # ------------------
 

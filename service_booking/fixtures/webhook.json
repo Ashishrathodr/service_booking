@@ -1,0 +1,34 @@
+[
+ {
+  "background_jobs_queue": "",
+  "condition": "doc.status==\"Approved\"",
+  "docstatus": 0,
+  "doctype": "Webhook",
+  "enable_security": 0,
+  "enabled": 1,
+  "is_dynamic_url": 0,
+  "meets_condition": "Select a document to check if it meets conditions.",
+  "modified": "2025-07-31 20:24:35.867694",
+  "name": "Service Booking",
+  "preview_document": null,
+  "preview_request_body": "Select a document to preview request data",
+  "request_method": "POST",
+  "request_structure": "JSON",
+  "request_url": "https://webhook.site/newbooking",
+  "timeout": 5,
+  "webhook_data": [],
+  "webhook_docevent": "after_insert",
+  "webhook_doctype": "Service Booking",
+  "webhook_headers": [
+   {
+    "key": "Content-Type",
+    "parent": "Service Booking",
+    "parentfield": "webhook_headers",
+    "parenttype": "Webhook",
+    "value": "application/json"
+   }
+  ],
+  "webhook_json": "    {\n        \"customer\": \"{{ doc.customer }}\",\n        \"customer_name\": \"{{ doc.customer_name }}\",\n        \"service_type\": \"{{ doc.service_type }}\",\n        \"datetime\": \"{{ doc.preferred_date }}\",\n        \"status\": \"{{ doc.status }}\",\n    }",
+  "webhook_secret": null
+ }
+]

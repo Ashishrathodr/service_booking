@@ -4,29 +4,41 @@ Service Booking
 
 ### Installation
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+### Local
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app service_booking
+To setup the repository locally follow the steps mentioned below:
+
+1. Setup bench by following the [Installation Steps](https://frappeframework.com/docs/user/en/installation) and start the server
+
+```
+bench start
 ```
 
-### Contributing
+2. In a separate terminal window, cd into `frappe-bench` directory and run the following commands:
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/service_booking
-pre-commit install
 ```
+# get app
+$ bench get-app https://github.com/Ashishrathodr/service_booking.git
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+# install on site
+$ bench --site sitename install-app service_booking
+$ bench --site sitename migrate
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+```
+🖥 System Info
+	•	OS: Ubuntu 22.04
+	•	Python: 3.10
+	•	Frappe: 15.69.2
+    •	ERPNext: 15.63.0
+	•	Tools: VS Code
+
+📘 Features
+	•	Doctype: Service Booking
+	•	Server Script: Sends confirmation email on approval
+	•	Print Format: Jinja-based confirmation receipt
+	•	Report: Filtered view of service booking
+	•	Webhook integration
+
 
 ### License
 
